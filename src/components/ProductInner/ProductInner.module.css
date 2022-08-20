@@ -1,0 +1,73 @@
+.content {
+  display: flex;
+  column-gap: 3em;
+}
+
+.left .img {
+  width: 100%;
+  max-width: 40em;
+  object-fit: cover;
+}
+
+.description {
+  font: var(--text-normal-default);
+  color: hsla(243, 29%, 13%, 0.7);
+  margin-bottom: 2em;
+}
+
+.price {
+  font: var(--text-big-bold);
+  color: var(--black-900);
+  margin-bottom: 1em;
+}
+
+.amount-title {
+  font: var(--text-normal-default);
+  margin-bottom: .5em;
+}
+
+.amount {
+  border: 1px solid var(--primary-100);
+  border-radius: .5em;
+  padding: .625em .5em;
+  width: 100%;
+  font: var(--text-normal-default);
+  line-height: 1.25px;
+  color: var(--black-900);
+  max-width: 20em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.amount .minus,
+.amount .plus {
+  font-size: 1.6em;
+}
+
+.amount .input {
+  width: 2.1875em;
+  text-align: center;
+  border: none;
+  outline: 0;
+}
+
+.add-cart {
+  border-radius: .5em;
+  padding: .5em .95em;
+  font: var(--text-normal-default);
+  color: var(--white);
+  border: 1px solid transparent;
+  background: var(--secondary-500);
+  height: 3em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 25em;
+}
+
+.add-cart:hover {
+  background: var(--secondary-400);
+}

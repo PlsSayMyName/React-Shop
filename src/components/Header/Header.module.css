@@ -1,0 +1,44 @@
+.header {
+  padding-bottom: 2em;
+}
+
+.top {
+  display: flex;
+  padding: 1.2em 0;
+}
+
+.button-box {
+  margin-left: auto;
+  display: flex;
+  column-gap: 1.2em;
+}
+
+.cart,
+.login {
+  font: var(--text-normal-default);
+}
+
+.cart svg,
+.login svg {
+  width: 100%;
+  max-width: 1.5em;
+  margin-left: .5em;
+}
+
+.cart svg {
+  margin-left: 0;
+  margin-right: .5em;
+}
+
+.nav {
+  border-bottom: 1px solid var(--theme-divider);
+  padding-bottom: .8em;
+}
+
+.nav a {
+  padding: .5em 1em;
+}
+
+.nav a:hover {
+  color: var(--secondary-800);
+}

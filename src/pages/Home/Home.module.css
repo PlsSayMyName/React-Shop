@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+  grid-gap: 1em;
+  justify-items: center;
+}
