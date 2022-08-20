@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d5c3724.css",
+    "main.js": "/static/js/main.fcab6cda.js",
+    "static/media/no-image.jpg": "/static/media/no-image.1be80385d86bd15c4573.jpg",
+    "static/media/Inter-b.woff2": "/static/media/Inter-b.1f5228f56700dc7e825a.woff2",
+    "static/media/Inter-m.woff2": "/static/media/Inter-m.ff9bcd8a6e42b875d1bc.woff2",
+    "static/media/Inter-sb.woff2": "/static/media/Inter-sb.b5f0f109bc88052d4000.woff2",
+    "static/media/Inter-r.woff2": "/static/media/Inter-r.b93098488dc114f0a932.woff2",
+    "static/media/Montserrat-b.woff2": "/static/media/Montserrat-b.6392e617a6763a39cccc.woff2",
+    "static/media/Montserrat-eb.woff2": "/static/media/Montserrat-eb.516ff969c21cf69522cf.woff2",
+    "static/media/Montserrat-bl.woff2": "/static/media/Montserrat-bl.2b2e8c06fae90013be2e.woff2",
+    "static/media/logo.svg": "/static/media/logo.42c705147c00971f6274ace6093dffda.svg",
+    "index.html": "/index.html",
+    "main.8d5c3724.css.map": "/static/css/main.8d5c3724.css.map",
+    "main.fcab6cda.js.map": "/static/js/main.fcab6cda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d5c3724.css",
+    "static/js/main.fcab6cda.js"
+  ]
+}
