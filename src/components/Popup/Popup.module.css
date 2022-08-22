@@ -68,36 +68,3 @@
 .close:hover::after {
   background-color: var(--primary-600);
 }
-
-.button-box {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 1.5em;
-}
-
-.button-box .login,
-.button-box .cancel {
-  max-width: 10.5em;
-  width: 100%;
-  border-radius: .5em;
-  padding: .5em 1em;
-  font: var(--text-normal-default);
-  color: var(--white);
-  border: 1px solid transparent;
-  background: var(--primary-800);
-  height: 40px;
-  justify-content: center;
-}
-
-.button-box .cancel {
-  background: none;
-  color: var(--primary-800);
-}
-
-.button-box .login:hover {
-  background: var(--primary-600);
-}
-
-.button-box .cancel:hover {
-  background: var(--primary-200);
-}

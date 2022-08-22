@@ -5,7 +5,7 @@ import { NotFound } from './pages/NotFound/NotFound';
 import './App.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-import { ProductInner } from './components/ProductInner/ProductInner';
+import { ProductInner } from './pages/ProductInner/ProductInner';
 import { ContextProvider } from './Context/Context';
 
 function App() {

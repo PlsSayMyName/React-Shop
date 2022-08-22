@@ -1,0 +1,20 @@
+.cart {
+  font: var(--text-normal-default);
+  border-radius: .5em;
+  padding: .5em 1em;
+}
+
+.cart:hover {
+  background: var(--primary-200);
+}
+
+.cart svg{
+  width: 100%;
+  max-width: 1.5em;
+  margin-left: .5em;
+}
+
+.cart svg {
+  margin-left: 0;
+  margin-right: .5em;
+}

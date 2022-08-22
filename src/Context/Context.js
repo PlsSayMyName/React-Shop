@@ -7,6 +7,7 @@ const initialState = {
 }
 
 export const ContextProvider = (props) => {
+  // Login
   const [logged, setLogged] = useState(false);
 
   useEffect(() => {
@@ -19,6 +20,7 @@ export const ContextProvider = (props) => {
     getLogged();
   }, []);
 
+  // Cart reducer
   const Reducers = (state, action) => {
     const { id, price } = action.payload;
     switch (action.type) {
