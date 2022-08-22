@@ -262,3 +262,10 @@ h1 {
 main {
     margin-bottom: 5em;
 }
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
+}

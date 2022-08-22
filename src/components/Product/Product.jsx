@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { getProducts } from "../../api/getProducts";
 import blank from "../../images/no-image.jpg";
 import styles from "./Product.module.css";
+import { Context } from "../../Context/Context";
 
 export const Product = () => {
 	const [products, setProducts] = useState([]);
+	let { logged, dispatch } = useContext(Context);
 
 	useEffect(() => {
 		let mounted = true;
@@ -21,7 +23,11 @@ export const Product = () => {
 		}
 		return () => (mounted = false);
 	}, []);
-	console.log(products);
+
+	const addToCart = (product) => {
+		dispatch({ type: "ADD_TO_CART", payload: product });
+	};
+
 	return (
 		<>
 			{products.map((product) => (
@@ -51,10 +57,20 @@ export const Product = () => {
 								{product.title}
 							</Link>
 						</h2>
-						<p className={styles.price}>{product.price} $</p>
-						<Button type="button" className={styles["add-cart"]}>
-							Добавить в корзину
-						</Button>
+						<p className={styles.price}>
+							{product.price.toFixed(2)} $
+						</p>
+						{logged ? (
+							<Button
+								type="button"
+								className={styles["add-cart"]}
+								onClick={() => addToCart(product)}
+							>
+								Добавить в корзину
+							</Button>
+						) : (
+							<p>Чтобы добавить товар в корзину, залогинитесь!</p>
+						)}
 					</div>
 					<div className={styles["right"]}>
 						{product.images[0] ? (

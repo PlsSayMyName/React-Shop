@@ -1,0 +1,24 @@
+.first {
+  margin-bottom: 2.5em;
+}
+
+.first,
+.second {
+  display: flex;
+  column-gap: 5em;
+  align-items: center;
+  justify-content: space-between;
+}
+.first .left,
+.first .right,
+.second .left,
+.second .right {
+  width: 50%;
+}
+.first .left img,
+.second .right img {
+  max-width: 45em;
+  height: 25em;
+  width: 100%;
+  object-fit: cover;
+}

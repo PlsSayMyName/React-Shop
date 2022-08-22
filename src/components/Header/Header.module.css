@@ -4,7 +4,19 @@
 
 .top {
   display: flex;
+  align-items: center;
   padding: 1.2em 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: hsla(0, 0%, 100%, 0.95);
+  z-index: 10;
+  display: flex;
+  padding: 1.2em 1.25em;
 }
 
 .button-box {
@@ -16,6 +28,13 @@
 .cart,
 .login {
   font: var(--text-normal-default);
+  border-radius: .5em;
+  padding: .5em 1em;
+}
+
+.cart:hover,
+.login:hover {
+  background: var(--primary-200);
 }
 
 .cart svg,

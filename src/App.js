@@ -6,19 +6,22 @@ import './App.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { ProductInner } from './components/ProductInner/ProductInner';
+import { ContextProvider } from './Context/Context';
 
 function App() {
 	return (
 		<>
-			<Routes>
-				<Route path="/" element={<Header />}>
-					<Route index element={<Home />} />
-					<Route path='about' element={<About />} />
-					<Route path='*' element={<NotFound />} />
-					<Route path="/products/:id" element={<ProductInner />} />
-				</Route>
-			</Routes>
-			<Footer />
+			<ContextProvider>
+				<Routes>
+					<Route path="/" element={<Header />}>
+						<Route index element={<Home />} />
+						<Route path='about' element={<About />} />
+						<Route path="/products/:id" element={<ProductInner />} />
+						<Route path='*' element={<NotFound />} />
+					</Route>
+				</Routes>
+				<Footer />
+			</ContextProvider>
 		</>
 	);
 }
