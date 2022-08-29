@@ -1,6 +1,7 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Context } from "../../Context/Context";
+import { login } from "../../redux/userReducer";
 import { Button } from "../Button/Button";
 import { Input } from "../Input/Input";
 import styles from "./Login.module.css";
@@ -12,7 +13,7 @@ export const Form = (props) => {
 	const [error, setError] = useState({});
 	const [user, setUser] = useState("");
 	const [pass, setPass] = useState("");
-	const { setLogged } = useContext(Context);
+	const dispatch = useDispatch();
 	let navigate = useNavigate();
 	let errors = {};
 	const handleChangeLogin = (e) => {
@@ -33,20 +34,13 @@ export const Form = (props) => {
 		}
 		setError({ ...errors, errors: error });
 		if (username === user && password === pass) {
-			sessionStorage.setItem("user", username);
-			sessionStorage.setItem("password", password);
+			dispatch(login(true));
 			navigate("/");
 			props.closePopup();
-			setLogged(true);
 		}
 	};
 	return (
-		<form
-			// method="POST"
-			name="login-form"
-			className={styles.form}
-			onSubmit={handleSubmit}
-		>
+		<form name="login-form" className={styles.form} onSubmit={handleSubmit}>
 			<Input
 				type="text"
 				name="Логин"

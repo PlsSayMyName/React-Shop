@@ -1,0 +1,25 @@
+.total .sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total span {
+  color: var(--secondary-400);
+}
+.total strong {
+  color: var(--secondary-700);
+}
+.total .clear {
+  background: var(--primary-900);
+  color: var(--white);
+  padding: .5em 1em;
+  border: 1px solid transparent;
+  font: var(--text-normal-default);
+  width: 13.7em;
+  justify-content: center;
+}
+.total .clear:hover {
+  background: transparent;
+  border-color: var(--primary-900);
+  color: var(--primary-900);
+}

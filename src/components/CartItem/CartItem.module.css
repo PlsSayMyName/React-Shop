@@ -1,0 +1,30 @@
+.item {
+  margin-bottom: 1em;
+}
+.item td {
+  text-align: center;
+}
+.amount {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.amount .minus,
+.amount .plus {
+  font-size: 1.6rem;
+}
+.item .remove {
+  background: var(--secondary-900);
+  color: var(--white);
+  padding: .5em 1em;
+  border: 1px solid transparent;
+  font: var(--text-normal-default);
+}
+.item td:last-child {
+  margin: 0 auto;
+}
+.item .remove:hover {
+  background: transparent;
+  border-color: var(--secondary-900);
+  color: var(--secondary-900);
+}

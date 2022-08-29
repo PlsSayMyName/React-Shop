@@ -20,13 +20,16 @@
 
 .left {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background: var(--white);
+  width: 100%;
 }
 
 .img-box {
   max-width: 15em;
   margin-bottom: 1em;
+  align-self: center;
 }
 
 .main-img-link {
@@ -36,9 +39,9 @@
 .main-img {
   width: 100%;
   max-width: 15em;
-  max-height: 15em;
+  max-height: 10em;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-title,

@@ -48,7 +48,9 @@
   margin-left: 0;
   margin-right: .5em;
 }
-
+.bottom {
+  padding-top: 4.5em;
+}
 .nav {
   border-bottom: 1px solid var(--theme-divider);
   padding-bottom: .8em;
